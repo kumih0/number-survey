@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Numbers Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  </head>
+  <body>
+<h1 id="title">Numbers Survey</h1>
+<p id="description">The numbers people: collecting useless data on subjective interpretations of numbers since 1983.  Please fill out this form to contribute to our research.</p>
+<form id="survey-form" method="post" action="https://numbers-survey.info">
+<fieldset>
+  <legend id="info-title">Contact Information</legend>
+  <p id="disclaimer">Disclaimer: please note we will <i>never</i> share your personal information unless we can make a profit with advertising, marketing, and other third-parties.</p>
+  <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+  <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+  <label for="phone" id="phone-label">Phone: <input id="phone" type="text" length="10" pattern="0-9999999999" placeholder="(optional) ex. 7735550000" />
+  </fieldset>
+  <fieldset>
+    <legend>Favorite Number</legend>
+  <label for="number" id="number-label">What is your favorite number (0-100)? <input id="number" type="number" min="0" max="100" placeholder="ex. 25" /></label>
+  <label for="why">Please give a brief explanation why: <textarea id="why" rows="4" cols="45" placeholder="ex. # is my favorite number because..." required></textarea></label>
+    </fieldset>
+    <fieldset>
+      <label>Is the number even or odd?
+      <label for="even"><input type="radio" id="even" name="number-type" value="even" checked/> Even</label>
+      <label for="odd"><input type="radio" id="odd" name="number-type" value="odd" /> Odd</label>
+      </label>
+      <label for="number-color">What color do you associate or see this number as?
+        <select id="dropdown" name="number-color">
+          <option value="">(Choose one color)</option>
+          <option value="1">Red</option>
+          <option value="2">Orange</option>
+          <option value="3">Yellow</option>
+          <option value="4">Green</option>
+          <option value="5">Blue</option>
+          <option value="6">Purple</option>
+          <option value="7">Pink</option>
+          <option value="8">Brown</option>
+          <option value="9">Grey/Black</option>
+          <option value="10">No color</option>
+          </select>
+          </label>
+        <label for="multiply">Is this number a multiple/divisible by (select all that apply):</label>
+          <label for="two" class="inline"><input type="checkbox" id="two" name="multiply" value="two" checked/> 2</label>
+          <label for="three" class="inline"><input type="checkbox" id="three" name="multiply" value="three" /> 3</label>
+           <label for="four" class="inline"><input type="checkbox" id="four" name="multiply" value="four" /> 4</label>
+           <label for="five" class="inline"><input type="checkbox" id="five" name="multiply" value="five" /> 5</label>
+           <label for="six" class="inline"><input type="checkbox" id="six" name="multiply" value="six" /> 6</label>
+           <label for="seven" class="inline"><input type="checkbox" id="seven" name="multiply" value="seven"/> 7</label>
+           <label for="eight" class="inline"><input type="checkbox" id="eight" name="multiply" value="eight" /> 8</label>
+           <label for="nine" class="inline"><input type="checkbox" id="nine" name="multiply" value="nine"/> 9</label>
+           <label for="ten" class="inline"><input type="checkbox" id="ten" name="multiply" value="ten" /> 10</label>
+           <label for="eleven" class="inline"><input type="checkbox" id="eleven" name="multiply" value="eleven"/> 11</label>
+           <label for="twelve" class="inline"><input type="checkbox" id="twelve" name="multiply" value="twelve"/> 12</label>
+           <label for="prime"><input type="checkbox" id="prime" name="multiply" value="prime" /> Prime number</label>
+           <label for="other"><input type="checkbox" id="other" name="multiply" value="other"/> Other (not listed)</label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    </body>
+  </html>
